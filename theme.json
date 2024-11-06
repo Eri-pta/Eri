@@ -1,0 +1,124 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+      "color": {
+        "palette": [
+          {
+            "slug": "primary",
+            "color": "#1e1e1e",
+            "name": "Primary"
+          },
+          {
+            "slug": "secondary",
+            "color": "#fdf905",
+            "name": "Secondary"
+          },
+          {
+            "slug": "tertiary",
+            "color": "#00ff2a",
+            "name": "Tertiary"
+          },
+          {
+            "slug": "accent",
+            "color": "#832c7c",
+            "name": "Accent"
+          }
+        ],
+        "background": {
+          "color": "#1e1e1e"
+        }
+      },
+      "typography": {
+        "fontSizes": [
+          {
+            "slug": "small",
+            "size": "14px",
+            "name": "Small"
+          },
+          {
+            "slug": "regular",
+            "size": "18px",
+            "name": "Regular"
+          },
+          {
+            "slug": "large",
+            "size": "24px",
+            "name": "Large"
+          },
+          {
+            "slug": "x-large",
+            "size": "32px",
+            "name": "X-Large"
+          }
+        ],
+        "fontFamilies": [
+          {
+            "fontFamily": "Segoe UI, Tahoma, Geneva, Verdana, sans-serif",
+            "name": "Segoe UI",
+            "slug": "segoe-ui"
+          }
+        ],
+        "customFontSize": true
+      },
+      "layout": {
+        "contentSize": "800px",
+        "wideSize": "1200px"
+      },
+      "spacing": {
+        "padding": true,
+        "units": ["px", "%", "em", "rem"],
+        "blockGap": "20px"
+      }
+    },
+    "styles": {
+      "color": {
+        "background": "#1e1e1e",
+        "text": "#ffffff",
+        "link": {
+          "color": "#832c7c"
+        }
+      },
+      "typography": {
+        "fontFamily": "Segoe UI, Tahoma, Geneva, Verdana, sans-serif",
+        "fontSize": "18px",
+        "lineHeight": 1.6
+      },
+      "spacing": {
+        "padding": {
+          "top": "20px",
+          "bottom": "20px",
+          "left": "20px",
+          "right": "20px"
+        }
+      },
+      "blocks": {
+        "core/paragraph": {
+          "typography": {
+            "fontSize": "18px"
+          },
+          "color": {
+            "text": "#f4f803"
+          }
+        },
+        "core/heading": {
+          "typography": {
+            "fontSize": "32px"
+          },
+          "color": {
+            "text": "#f4f803"
+          }
+        },
+        "core/button": {
+          "color": {
+            "background": "#832c7c",
+            "text": "#ffffff"
+          },
+          "border": {
+            "radius": "5px"
+          }
+        }
+      }
+    }
+  }
+  

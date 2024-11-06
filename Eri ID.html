@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Application Form - Eritrean Embassy in South Africa</title>
+    <style>
+        /* Modern CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(7, 1, 1);
+            background-color: rgba(153, 155, 160, 0.8); /* Background color */
+            background: url('Flag_of_Eritrea.gif') no-repeat center center fixed;
+            background-size: cover;
+            padding: 20px; /* Padding around the body */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            
+        }
+       
+      
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px; /* Space below headers */
+        }
+
+        form {
+            max-width: 600px; /* Limit the width of the form */
+            margin: 0 auto; /* Center the form */
+            background-color: rgba(138, 238, 151, 0.9); /* Semi-transparent white */
+            padding: 20px; /* Padding inside the form */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow */
+        }
+
+        label {
+            display: block; /* Labels on their own line */
+            margin-bottom: 10px; /* Space below labels */
+            font-weight: bold; /* Bold labels */
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%; /* Full width inputs */
+            padding: 10px; /* Padding inside inputs */
+            margin-bottom: 15px; /* Space below inputs */
+            border-radius: 5px; /* Rounded edges */
+            border: 1px solid #ccc; /* Border style */
+        }
+
+        input[type="radio"] {
+            margin-right: 5px; /* Space to the right of radio buttons */
+        }
+
+        .document-checklist {
+            margin-top: 20px; /* Space above the checklist */
+            padding: 10px;
+            background-color: rgba(131, 204, 124, 0.8); /* Semi-transparent background for checklist */
+            border-radius: 5px; /* Rounded edges */
+        }
+
+        .button {
+            background-color: rgba(241, 73, 73, 0.8); /* Button background color */
+            color: white; /* Button text color */
+            padding: 10px 15px; /* Button padding */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer on hover */
+            font-size: 1em; /* Button font size */
+            display: block; /* Block display for button */
+            margin: 20px auto; /* Center the button */
+        }
+
+        .button:hover {
+            background-color: rgba(255, 209, 0, 0.9); /* Change button color on hover */
+            color: #333; /* Change text color on hover */
+        }
+        .back-button {
+            background-color: #006400; /* Dark green background */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            width: 200px;
+            margin: 20px auto;
+        }
+
+        .back-button:hover {
+            background-color: #228B22; /* Lighter green on hover */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Application for Eritrean National ID</h1>
+    <form action="submit_id_application.php" method="post" enctype="multipart/form-data">
+        <h2>Personal Information</h2>
+        <label for="full_name">Full Name (as per birth certificate or passport):</label>
+        <input type="text" id="full_name" name="full_name" required>
+
+        <label for="date_of_birth">Date of Birth (DD/MM/YYYY):</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required>
+
+        <label for="place_of_birth">Place of Birth (City, Country):</label>
+        <input type="text" id="place_of_birth" name="place_of_birth" required>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required> Male
+        <input type="radio" id="female" name="gender" value="Female" required> Female
+        <input type="radio" id="other" name="gender" value="Other"> Other
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" required>
+
+        <label for="id_number">National Identification Number (if applicable):</label>
+        <input type="text" id="id_number" name="id_number">
+
+        <label for="prev_id_number">Previous Eritrean ID Number (if any):</label>
+        <input type="text" id="prev_id_number" name="prev_id_number">
+
+        <h2>Parental Information</h2>
+        <label for="father_name">Father’s Full Name:</label>
+        <input type="text" id="father_name" name="father_name" required>
+
+        <label for="mother_name">Mother’s Full Name:</label>
+        <input type="text" id="mother_name" name="mother_name" required>
+
+        <label for="father_nationality">Father’s Nationality:</label>
+        <input type="text" id="father_nationality" name="father_nationality" required>
+
+        <label for="mother_nationality">Mother’s Nationality:</label>
+        <input type="text" id="mother_nationality" name="mother_nationality" required>
+
+        <h2>Contact Information</h2>
+        <label for="current_address">Current Address (Street, City, Postal Code, Country):</label>
+        <input type="text" id="current_address" name="current_address" required>
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <h2>Marital Status</h2>
+        <label for="marital_status">Marital Status:</label>
+        <input type="radio" id="single" name="marital_status" value="Single" required> Single
+        <input type="radio" id="married" name="marital_status" value="Married"> Married
+        <input type="radio" id="divorced" name="marital_status" value="Divorced"> Divorced
+        <input type="radio" id="widowed" name="marital_status" value="Widowed"> Widowed
+
+        <label for="spouse_name">If married, spouse’s full name:</label>
+        <input type="text" id="spouse_name" name="spouse_name">
+
+        <label for="spouse_nationality">Spouse’s nationality:</label>
+        <input type="text" id="spouse_nationality" name="spouse_nationality">
+
+        <h2>Employment Details</h2>
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" name="occupation">
+
+        <label for="employer">Employer’s Name and Address:</label>
+        <input type="text" id="employer" name="employer">
+
+        <label for="employment_status">Employment Status:</label>
+        <input type="radio" id="employed" name="employment_status" value="Employed"> Employed
+        <input type="radio" id="self_employed" name="employment_status" value="Self-employed"> Self-employed
+        <input type="radio" id="unemployed" name="employment_status" value="Unemployed"> Unemployed
+        <input type="radio" id="student" name="employment_status" value="Student"> Student
+        <input type="radio" id="retired" name="employment_status" value="Retired"> Retired
+
+        <h2>Reason for ID Application</h2>
+        <label for="id_purpose">Purpose of this ID Application:</label>
+        <select id="id_purpose" name="id_purpose" required>
+            <option value="New ID">New ID</option>
+            <option value="Renewal">Renewal</option>
+            <option value="Replacement">Replacement (due to loss, theft, or damage)</option>
+            <option value="Correction">Correction of information</option>
+        </select>
+
+        <label for="replacement_reason">If replacement or correction, please provide details:</label>
+        <input type="text" id="replacement_reason" name="replacement_reason">
+
+        <div class="document-checklist">
+            <h2>Document Checklist</h2>
+            <p>Please attach the following documents to your application:</p>
+            <ul>
+                <li>Birth certificate or other proof of Eritrean nationality</li>
+                <label for="birth_certificate">Upload Document:</label>
+                <input type="file" id="birth_certificate" name="birth_certificate" required>
+                
+                <li>Valid Eritrean passport (if applicable)</li>
+                <label for="valid_passport">Upload Document:</label>
+                <input type="file" id="valid_passport" name="valid_passport">
+                
+                <li>Proof of residence in South Africa</li>
+                <label for="proof_residence">Upload Document:</label>
+                <input type="file" id="proof_residence" name="proof_residence" required>
+                
+                <li>Two passport-sized photographs (recent)</li>
+                <label for="passport_photos">Upload Document:</label>
+                <input type="file" id="passport_photos" name="passport_photos" required>
+
+                <li>Valid passport (with at least 6 months validity)</li>
+                <label for="valid_passport">Upload Document:</label>
+                <input type="file" id="valid_passport" name="valid_passport" required>
+                
+                <li>Passport-sized photograph (recent)</li>
+                <label for="passport_photo">Upload Document:</label>
+                <input type="file" id="passport_photo" name="passport_photo" required>
+                
+                <li>Proof of accommodation (hotel reservation or invitation letter)</li>
+                <label for="proof_accommodation">Upload Document:</label>
+                <input type="file" id="proof_accommodation" name="proof_accommodation" required>
+                
+                <li>Travel itinerary (flight bookings)</li>
+                <label for="travel_itinerary">Upload Document:</label>
+                <input type="file" id="travel_itinerary" name="travel_itinerary" required>
+                
+                <li>Proof of financial means (bank statements)</li>
+                <label for="proof_financial_means">Upload Document:</label>
+                <input type="file" id="proof_financial_means" name="proof_financial_means" required>
+                
+                <li>Any additional documents required based on the purpose of the visit</li>
+                <label for="additional_documents">Upload Document:</label>
+                <input type="file" id="additional_documents" name="additional_documents">
+            </ul>
+        </div>
+
+        <h2>Declaration</h2>
+        <label for="declaration">I hereby declare that the information provided in this application is true and correct to the best of my knowledge:</label>
+        <input type="checkbox" id="declaration" name="declaration" required> I Agree
+
+        <label for="signature">Signature:</label>
+        <input type="text" id="signature" name="signature" required>
+
+        <label for="date">Date (DD/MM/YYYY):</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit" class="button">Submit Application</button>
+    </form>
+
+    <!-- Back to Home Button -->
+    <a href="services.html" class="back-button">Back</a>
+
+</body>
+</html>

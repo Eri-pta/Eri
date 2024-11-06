@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History - Eritrean Embassy in South Africa</title>
+    <style>
+        /* Modern CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            line-height: 1.6;
+            background-color: #1e1e1e; /* Dark background for contrast */
+            min-height: 100vh; /* Ensures footer stays at the bottom */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .background {
+            background: url('Flag_of_Eritrea.gif') no-repeat center center fixed;
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        header {
+            color: rgb(253, 249, 5);
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            width: 90px;
+            height: auto;
+            margin: 0 20px;
+        }
+
+        h1 {
+            color: rgb(244, 248, 3);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: rgb(244, 248, 3);
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: rgba(17, 0, 255, 0.9);
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 50px 20px;
+            flex-grow: 1; /* Ensures content fills the available space */
+            background-color: rgba(255, 255, 255, 0.1); /* Slightly lighten banner background */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+            margin: 20px; /* Adds spacing around the banner */
+        }
+
+        .banner h1 {
+            font-size: 3em;
+            color: rgb(0, 255, 42);
+            margin-bottom: 20px;
+        }
+
+        .banner p {
+            max-width: 800px;
+            margin: 10px auto;
+            color: #ffffff;
+            font-size: 1.2em; /* Increased font size for better readability */
+            line-height: 1.4;
+        }
+
+        footer {
+            background-color: rgba(0, 51, 160, 0.8) /* Semi-transparent dark blue */
+            color: white;
+            padding: 20px; /* Reduced padding for a cleaner look */
+            text-align: center;
+            font-size: 0.9em;
+            width: 100%;
+            position: fixed; /* Ensures the footer stays at the bottom */
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+           
+        }
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                margin: 0 5px;
+                padding: 10px 15px;
+            }
+
+            .banner p {
+                font-size: 1em; /* Responsive font size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div> <!-- Blurred background layer -->
+
+    <header>
+        <img src="logo 1.png" alt="Left Logo" class="logo logo-left"> <!-- Left Logo -->
+        <h1>History of Eritrea</h1>
+        <img src="logo 1.png" alt="Right Logo" class="logo logo-right"> <!-- Right Logo -->
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="services.html">Services</a>
+        <a href="information.html">Information</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="banner">
+        <h1>Contact Us</h1>
+        <p>Eritrean Embassy in South Africa</p>
+        <p>Email: <a href="eremb@lantic.net" style="color: rgb(0, 255, 42);">eremb@lantic.net</a></p>
+        <p>Phone: <a href="tel:+2712 333 1302" style="color: rgb(0, 255, 42);">+2712 333 1302</a></p>
+        <p>Whatsapp: <a href="tel:+2712 333 1302" style="color: rgb(0, 255, 42);">+2712 333 1302</a></p>
+        <p>Address: 1281 Cobham Rd, Queenswood, Pretoria, 0186, South Africa</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Eritrean Embassy in South Africa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

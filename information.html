@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information - Eritrean Embassy in South Africa</title>
+    <style>
+        /* Modern CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            line-height: 1.6;
+            background-color: #1e1e1e; /* Dark background for contrast */
+            min-height: 100vh; /* Ensures footer stays at the bottom */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .background {
+            background: url('Flag_of_Eritrea.gif') no-repeat center center fixed;
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        header {
+            color: rgb(253, 249, 5);
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            width: 90px;
+            height: auto;
+            margin: 0 20px;
+        }
+
+        h1 {
+            color: rgb(244, 248, 3);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: rgb(244, 248, 3);
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: rgba(17, 0, 255, 0.9);
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .banner {
+            text-align: center;
+            padding: 50px 20px;
+            flex-grow: 1; /* Ensures content fills the available space */
+        }
+
+        .banner h1 {
+            font-size: 3em;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: rgb(0, 255, 42);
+        }
+
+        .banner ul {
+            list-style-type: none;
+            margin-top: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+        }
+
+        .banner ul li {
+            margin-bottom: 10px;
+        }
+
+        .banner ul li strong {
+            color: rgb(253, 249, 5); /* Highlight important info */
+        }
+
+        footer {
+            background-color: rgba(0, 51, 160, 0.8) /* Semi-transparent dark blue */
+            color: white;
+            padding: 20px; /* Reduced padding for a cleaner look */
+            text-align: center;
+            font-size: 0.9em;
+            width: 100%;
+            position: fixed; /* Ensures the footer stays at the bottom */
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+           
+        }
+
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                margin: 0 5px;
+                padding: 10px 15px;
+            }
+
+            .banner ul {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div> <!-- Blurred background layer -->
+
+    <header>
+        <img src="logo 1.png" alt="Left Logo" class="logo logo-left"> <!-- Left Logo -->
+        <h1>Information From Eritrean Embassy</h1>
+        <img src="logo 1.png" alt="Right Logo" class="logo logo-right"> <!-- Right Logo -->
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="services.html">Services</a>
+        <a href="information.html">Information</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="banner">
+        <h1>Important Information & Events</h1>
+        <ul>
+            <li><strong>24 May – Eritrean Independence Day:</strong> Eritrea celebrates its independence on 24 May each year. This day commemorates the end of the long and difficult struggle for independence from Ethiopia, which was officially achieved in 1993.</li>
+            <li><strong>Annual Meetings:</strong> The Eritrean Embassy in South Africa holds various meetings with the Eritrean community to discuss important issues such as national development, consular services, and community welfare.</li>
+            <li><strong>Consular Services Day:</strong> The embassy offers special days for consular services, such as issuing IDs, passports, and visa services. Please contact the embassy for the schedule and appointment information.</li>
+            <li><strong>Workshops for Eritrean Students:</strong> The embassy organizes workshops and seminars for Eritrean students studying in South Africa, offering guidance on educational and career opportunities.</li>
+            <li><strong>Community Events:</strong> The embassy organizes cultural events and gatherings for the Eritrean diaspora in South Africa throughout the year.</li>
+            <li><strong>COVID-19 Guidelines:</strong> The embassy continues to enforce COVID-19 safety measures for all consular visits and events. Follow the latest guidelines.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Eritrean Embassy in South Africa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

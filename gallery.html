@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Eritrean Embassy in South Africa</title>
+    <style>
+        /* Modern CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            line-height: 1.6;
+            position: relative;
+            overflow-y: auto; /* Allow vertical scrolling */
+            height: 100%; /* Set height to 100% to accommodate scrolling */
+            background-color: #1e1e1e; /* Dark background for contrast */
+        }
+
+        .background {
+            background: url('Flag_of_Eritrea.gif') no-repeat center center fixed;
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        header {
+            background-color: rgba(131, 204, 124, 0.8)
+            color: rgb(253, 249, 5);
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 90px;
+            height: auto;
+            margin: 0 20px;
+        }
+
+        h1 {
+            color: rgb(244, 248, 3);
+        }
+
+        p {
+            color: rgb(244, 248, 3);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(241, 73, 73, 0.8)
+            padding: 3px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav a {
+            color: rgb(244, 248, 3);
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+            font-weight: bolder;
+        }
+
+        nav a:hover {
+            background-color: rgba(17, 0, 255, 0.9);
+            color: hsl(0, 20%, 99%);
+            border-radius: 5px;
+        }
+
+        #gallery {
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+            z-index: 1; /* Bring gallery above the background */
+        }
+
+        #gallery h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between images */
+            max-width: 1000px; /* Limit width of gallery */
+            margin: 0 auto; /* Center gallery */
+        }
+
+        .gallery-item {
+            flex-direction: column; /* Stack image and caption vertically */
+            align-items: center; /* Center items */
+        }
+
+        .gallery img {
+            max-width: 300px; /* Max width for images */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .caption {
+            margin-top: 10px; /* Space between image and caption */
+            font-size: 1.1em;
+            color: rgb(244, 248, 3);
+        }
+
+        footer {
+            background-color: rgba(0, 51, 160, 0.8) /* Semi-transparent dark blue */
+            color: white;
+            padding: 20px; /* Reduced padding for a cleaner look */
+            text-align: center;
+            font-size: 0.9em;
+            width: 100%;
+            position: fixed; /* Ensures the footer stays at the bottom */
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            #gallery h2 {
+                font-size: 2em;
+            }
+
+            nav a {
+                margin: 0 5px;
+                padding: 10px 15px;
+            }
+
+            .gallery img {
+                max-width: 90%; /* Adjust image size on smaller screens */
+            }
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div class="background"></div> <!-- Blurred background layer -->
+
+    <header>
+        <img src="logo 1.png" alt="Left Logo" class="logo logo-left"> <!-- Left Logo -->
+        <h1>Gallery of Eritrean Cities</h1>
+        <img src="logo 1.png" alt="Right Logo" class="logo logo-right"> <!-- Right Logo -->
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="services.html">Services</a>
+        <a href="information.html">Information</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery of Eritrean Cities</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="asmara.jpg" alt="Asmara - Modernist Architecture">
+                <div class="caption">Asmara - Modernist Architecture</div>
+            </div>
+            <div class="gallery-item">
+                <img src="massawa.jpg" alt="Massawa - Historic Port City">
+                <div class="caption">Massawa - Historic Port City</div>
+            </div>
+            <div class="gallery-item">
+                <img src="keren.jpg" alt="Keren - Scenic Town">
+                <div class="caption">Keren - Scenic Town</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Eritrean Embassy in South Africa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
